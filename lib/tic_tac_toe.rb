@@ -137,7 +137,7 @@ class TicTacToe
   
   def get_moves
     result = []
-    player_token = ((turn_count - 1) % 2 == 0) ? "X" : "O"
+    player_token = current_player(1)
     @board.each_with_index do |el,idx|
       result << idx if el == player_token
     end
