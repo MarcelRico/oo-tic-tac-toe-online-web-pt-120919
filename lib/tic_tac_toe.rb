@@ -112,7 +112,7 @@ class TicTacToe
   
   def winner
     if won?
-      return ((turn_count-1) % 2 == 0) ? "X" : "O"
+      return current_player(1)
     end
     nil
   end
